@@ -1,8 +1,10 @@
 function Tresult = heattransfer(t,T0,rs,alpha_d,lambda_d)
     global N xn dx
     global T_inf Y_O_inf Qc nu cp Bm Qv lambda_g lambda_bd drs2dt
-    % the equation is discreted into Ax=BB and solved by LU decomposition.
-    % listx, listy indicate the index of the Matrix A where the content is indicated by the list.
+    % the equation is solved by LU decomposition of Ax=B. listx, listy indicate the
+    % index of the Matrix
+    % indicate the parameters in the equation and combine together to form
+    % a sparse Matrix to solve.
     h1 = (t(end)-t(1))/dx;
     h2 = (t(end)-t(1))/dx^2;
     a  = -(drs2dt/2/rs^2.*xn + 2*alpha_d/rs^2./xn);

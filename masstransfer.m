@@ -2,6 +2,8 @@ function Yresult = masstransfer(t,Y0,rho,rs,D)
     global N xn dx
     global lambda_g lambda_bd cp cp_bd drs2dt
     global Bm epsilon
+    % the equation is discreted into Ax=BB and solved by LU decomposition.
+    % listx, listy indicate the index of the Matrix A where the content is indicated by the list.
     
     Y10 = Y0(1:N+1);
     Y20 = 1 - Y10;
