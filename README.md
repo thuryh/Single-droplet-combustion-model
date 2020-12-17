@@ -1,4 +1,4 @@
 # Single-droplet-combustion-model
-multicomponent fuel
-The codes are used to simulate the single droplet combustion model.
-For 
+Matlab implementation of "Theoretical single droplet model for particle formation in flame spray pyrolysis" by Yihua Ren, Jinzhi Cai, Heinz Pitsch. Fuel. 2020.
+# Prerequisites
+Matlab 
