@@ -141,7 +141,6 @@ for i=1:1:length(tspan)-1
         Tresult_temp = Tinit;
         Yresult_temp = Yinit;
         phiresult_temp = phiinit;
-        dp_temp = dp0*ones(size(Tinit));
         while(converge == 1) % this iteration is for the variation of thermoproperties of liquid species
             % liquid-phase properties
             [rho_l, cp_l, lambda_l, viscosity_l] = Liquidmixpro(Yresult_temp,Tresult_temp);%estimate the density (kg/m3), heat capacity (J/kg/K), thermal conductivity(J/m/K)
